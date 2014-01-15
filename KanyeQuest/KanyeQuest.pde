@@ -7,4 +7,5 @@ void setup() {
 
 void draw() {
   i.Display();
+  i.Albums();
 }
