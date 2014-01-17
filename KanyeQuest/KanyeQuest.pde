@@ -1,4 +1,5 @@
 Intro i;
+PImage Background;
 
 void setup() {
   i = new Intro();
