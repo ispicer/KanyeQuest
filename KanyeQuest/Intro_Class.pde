@@ -1,5 +1,5 @@
 class Intro {
-  PImage Kanye, KanyeFlip, Title, Dropout, Graduation, Heartbreak, LR, Yeezus, MBDTF, Bears;
+  PImage Kanye, KanyeFlip, Title, Dropout, Graduation, Heartbreak, LR, Yeezus, MBDTF, Bear, Bear2;
   PVector loc1, loc2, loc3, loc4, loc5, loc6, vel;
   int w, l, d;
 
@@ -13,7 +13,8 @@ class Intro {
     LR = loadImage("Late Registration.jpg");
     MBDTF = loadImage("MBDTF.jpg");
     Yeezus = loadImage("Yeezus.jpg");
-    Bears = loadImage("Bears.jpg");
+    Bear = loadImage("Kanye Bear.png");
+    Bear2 = loadImage("Bear Flip.png");
     loc1 = new PVector(150, height/2 + 750);
     loc2 = new PVector(400, height/2 + 750);
     loc3 = new PVector(650, height/2 + 750);
@@ -21,7 +22,7 @@ class Intro {
     loc5 = new PVector(1150, height/2 + 750);
     loc6 = new PVector(1350, height/2 + 750);
     vel = new PVector(0, 0);
-    d = 50;
+    d = 100;
     w = 400;
     l = 450;
   }
@@ -29,9 +30,19 @@ class Intro {
   void Display() {
     background(35, 16, 54);
     imageMode(CENTER);
+    textAlign(CENTER);
     image(Kanye, width/2, height/2, w, l);
     image(Title, width/2, height/2 - 300, 700, l);
-    //    image(KanyeFlip, width/2, height/2, w, l);
+    image(Bear, width - 100, height/2, 150, 200);
+    image(Bear2, 100, height/2, 150, 200);
+    fill(128, 14, 42);
+    strokeWeight(5);
+    rect(200, height/2 - 200, 250, 100);
+    rect(width - 450, height/2 - 200, 250, 100);
+    textSize(40);
+    fill(168, 163, 12);
+    text("Start", 325, height/2 - 140);
+    text("Instructions", width - 325, height/2 - 140);
   }
 
   void Albums() {
