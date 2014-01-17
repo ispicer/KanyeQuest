@@ -21,7 +21,7 @@ class Intro {
     loc4 = new PVector(900, height/2 + 750);
     loc5 = new PVector(1150, height/2 + 750);
     loc6 = new PVector(1350, height/2 + 750);
-    vel = new PVector(0, 0);
+    vel = new PVector(2, 0);
     d = 100;
     w = 400;
     l = 450;
@@ -52,12 +52,12 @@ class Intro {
     image(Heartbreak, loc4.x, loc4.y, d, d);
     image(MBDTF, loc5.x, loc5.y, d, d);
     image(Yeezus, loc6.x, loc6.y, d, d);
-    loc1.x+=2;
-    loc2.x+=2;
-    loc3.x+=2;
-    loc4.x+=2;
-    loc5.x+=2;
-    loc6.x+=2;
+    loc1.x+=vel.x;
+    loc2.x+=vel.x;
+    loc3.x+=vel.x;
+    loc4.x+=vel.x;
+    loc5.x+=vel.x;
+    loc6.x+=vel.x;
     if (loc1.x + d/2 > width) {
       loc1.x = 0;
     }

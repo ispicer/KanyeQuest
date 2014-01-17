@@ -1,5 +1,4 @@
 Intro i;
-PImage Background;
 
 void setup() {
   i = new Intro();
@@ -7,6 +6,6 @@ void setup() {
 }
 
 void draw() {
-  i.Display();
+  i.Diplay();
   i.Albums();
 }
